@@ -1,0 +1,189 @@
+main {
+    background-color: rgb(197, 197, 197);
+    padding: 4px;
+    color: #202020;
+    grid-area: main;
+}
+
+aside {
+    background-color: rgb(197, 197, 197);
+    padding: 4px;
+    
+    color: #202020;
+    grid-area: aside;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h2, h3 {
+    color: rgb(2, 2, 83);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#codeImage {
+    border: 2px solid #202020;
+    padding: 2px;
+    margin: 8px;
+    border-radius: 500px;
+    max-width: 150px;
+}
+
+#mainHeader {
+    padding: 8px;   
+    color: #202020;   
+    margin-left: auto;
+    border-radius: 500;
+    
+}
+
+
+main .subtext {
+    border: inset 1px;
+    margin-bottom: 4px;
+    padding: 4px;
+    background-color: white;
+    color: #222;
+    text-align: center;
+}
+
+
+main .articles{
+    display: grid;
+    grid-template-columns: repeat(1,1 fr);
+    
+}
+
+
+main .articleOne {
+    border: inset 1px;
+    margin-bottom: 4px;
+    padding: 4px;
+    background-color: white;
+    color: #222;
+}
+
+main .articleOne .title {
+    font-weight: bold;
+}
+
+#secondParagraph{
+    font-weight: bold;
+    color: blue;
+}
+
+main .articleTwo {
+    border: inset 1px;
+    margin-bottom: 4px;
+    padding: 4px;
+    background-color: white;
+    color: #222;
+    grid-area: main;
+    grid-row-start: auto;
+}
+
+main .articleTwo .title {
+    font-weight: bold;
+    grid-area: main;
+    grid-row-end: auto;
+}
+
+.sideContent  {
+    
+    border: inset 1px;
+    margin-bottom: 4px;
+    padding: 4px;
+    background-color: white;
+    color: #222;
+    
+}
+
+.sideContent .title {
+    font-weight: bold;
+}
+
+.mainLogin {
+    background-color: rgb(129, 190, 160);
+}
+
+.loginForm {
+    text-align: center;
+    background-color: rgb(25, 112, 69);
+    width: 100%;
+    padding: 2px;
+    border: 8px;
+}
+
+.loginBody {
+    background-color: rgb(197, 197, 197);
+}
+
+ .loginHeader {
+    background-color:  rgb(25, 112, 69);
+    /* padding: 2px;
+    margin-bottom: 8px; */
+    border: #202020;
+}
+
+footer {
+    background-color: #202020;
+    color: lightblue;
+    text-align: center;
+    padding: 2px;
+    /* position: fixed;
+    bottom: 0;
+    left: 0; */
+    width: 100%;
+    grid-area: footer;
+}
+
+#menu li {
+    display: inline;
+    padding: 8px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+#menu li a{
+    color: white !important;
+    text-decoration: none;
+}
+
+#menu li.active {
+    background-color: darkslateblue;
+}
+
+header #loginButton{
+    
+    padding: 8px;
+    background-color: rgb(20, 20, 20);
+    color: white;   
+    margin-left: auto;
+    border-radius: 500;
+    
+}
+
+#loginButton a{
+    color: white !important;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    grid-area: header;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+    grid-template-columns: auto 200px;
+    grid-gap: 1px;
+}
+
